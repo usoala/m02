@@ -15,3 +15,5 @@ otraTortuguita.fd(50)
 otraTortuguita.speed(5)
 
 lentorra.speed(1)
+lentorra.right(90)
+lentorra.fd(50)
