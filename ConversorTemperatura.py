@@ -1,6 +1,6 @@
 class Termometro():
     def __init__(self):
-        self.__unidadM = "C"
+        self.__unidadM = ""
         self.__temperatura = 0
         
     def __conversor(self, temperatura, unidad):
@@ -31,8 +31,12 @@ class Termometro():
         if uniM == None or uniM == self.__unidadM:
             return self.__str__()
         else:
-            return self.__conversor(self.__temperatura,self.__unidadM)
-        
+            if uniM =="F" or uniM == "C":
+                return self.__conversor(self.__temperatura,self.__unidadM)
+            else:
+                return self.__str__()
+            
+            
 t = Termometro()
 
 t.uniM("C")
